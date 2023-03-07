@@ -1,0 +1,45 @@
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+header a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header .right {
+    float: right;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+}
+
+.flash {
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px;
+}

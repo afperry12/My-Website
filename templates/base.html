@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="dark" >
+    <header>
+        <div class="container">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <div class="right">
+                <a href="https://www.linkedin.com/in/peterfperry/">LinkedIn</a>
+                <a href="https://github.com/peterperry">GitHub</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div style="display: flex; flex-direction: column; height: 100%;">
+          {% for message in get_flashed_messages() %}
+            <div class="flash">{{ message }}</div>
+          {% endfor %}
+          {% block main %}{% endblock %}
+        </div>
+      </main>
+</body>
+</html>

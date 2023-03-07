@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<style>
+    iframe {
+      position: relative;
+      width: 100%;
+      height: calc(100vh + 100px);
+      /* margin-bottom: 40px; */
+    }
+  </style>
+  
+  <iframe src="/static/Build/index.html" frameborder="0" scrolling="no"></iframe>
+  
+{% endblock %}
