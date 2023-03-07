@@ -2,14 +2,32 @@
 
 {% block main %}
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
     iframe {
       position: relative;
       width: 100%;
       height: calc(100vh + 100px);
-      /* margin-bottom: 40px; */
     }
-  </style>
-  
-  <iframe src="/static/Build/index.html" frameborder="0" scrolling="no"></iframe>
-  
+    .controls {
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
+    .controls p {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="controls">
+    <p>Use <strong>W A S D</strong> to go forward, left, backward and right.</p>
+    <p>Tapping the <strong>space bar</strong> will be used to fly.</p>
+    <p>The <strong>escape key</strong> can be used to exit.</p>
+</div>
+
+<iframe src="/static/Build/index.html" frameborder="0" scrolling="no"></iframe>
+
 {% endblock %}

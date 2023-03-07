@@ -13,9 +13,10 @@ def projects():
             "date": "October 2021"
         },
         {
-            "name": "Project B",
-            "description": "A description of Project B",
-            "link": "https://www.example.com/project-b"
+            "name": "Space Agents Video Game",
+            "description": "In this project, I built my own custom network solution to creating a 3D video game. I wanted to be in control of every part of the process. So, I modeled my own humanoid game character and even did the bone rigging for it myself in Blender. I learned about creating, sending, and receiving packets. I learned about different methods of handling client-server architectures. I also learned how to build my own game launcher and inject authentication into the game on start",
+            "link": "/spaceagents",
+            "date": "July 2021"
         },
         {
             "name": "Project C",
