@@ -1,0 +1,8 @@
+*.pyc
+venv
+__pycache__
+*.log
+.DS_Store
+*.sqlite3
+static/downloads
+static/*
