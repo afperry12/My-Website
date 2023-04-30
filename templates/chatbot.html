@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CS Chatbot</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        #message {
+            width: 100%;
+            height: 100px;
+            resize: none;
+        }
+        #response {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            pointer-events: none;
+        }
+        button {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CS Chatbot</h1>
+        <form action="/chatbot" method="POST">
+            <label for="message">Enter your message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <label for="response">Bot response:</label>
+        <textarea id="response" name="response" placeholder="Bot response will appear here..." readonly></textarea>
+    </div>
+</body>
+</html>
